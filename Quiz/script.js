@@ -1,7 +1,6 @@
 let question, q1, q2, q3, questions, quizz;
 
 
-// oluşturulacak soruların temeli aşağıdaki constructarda
 question = function (text, choices, answer) {
     this.text = text;
     this.choices = choices;
