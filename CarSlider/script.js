@@ -1,4 +1,5 @@
 let models, index, right_click, left_click, settings, i, prev, interval, all_icons;
+// 
 models = [
     {
         name: 'Bmw 116d',
