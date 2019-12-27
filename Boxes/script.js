@@ -24,7 +24,6 @@ color = (event) => {
                 break;
             case "color": event.target.id = "1";
                 break;
-            default: event.target.id = "box";
 
         }
 
