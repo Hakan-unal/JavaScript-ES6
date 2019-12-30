@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hesap makinesi</title>
+</head>
+<style>
+    div {
+        background-color: aqua;
+        color: brown;
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .result {
+        width: 120px;
+        height: 50px;
+        border: solid red 1px;
+        background-color: white;
+        color: black;
+        display: block;
+        margin-left: 75px;
+    }
+
+    .first {
+        width: 50px;
+        height: 50px;
+    }
+
+    .second {
+        width: 50px;
+        height: 50px;
+    }
+
+    .third {
+        width: 50px;
+        height: 50px;
+    }
+
+    .fourth {
+        width: 50px;
+        height: 50px;
+    }
+
+    #input {
+        display: block;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    #delete{
+        margin-left: 110px;
+
+    }
+</style>
+
+<body>
+    <input placeholder="Please enter input" id="input" type="text">
+    <div class="first">+</div>
+    <div class="second">-</div>
+    <div class="third">*</div>
+    <div class="fourth">/</div>
+    <div class="result"></div>
+    <button id="delete">sıfırla</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
