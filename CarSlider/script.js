@@ -1,5 +1,5 @@
 let models, index, right_click, left_click, settings, i, prev, interval, all_icons;
-// 
+// models array'i içerisine 5 adet obje tanımlandı
 models = [
     {
         name: 'Bmw 116d',
@@ -27,9 +27,11 @@ models = [
         link: 'http://www.arabalar.com.tr/honda/civic/2018/1-6-elegance'
     }
 ];
+
 i = 0;
 index = 0;
 prev = 0;
+// html dökümanı üzerindeki gerekli yerler yakalandı
 right_click = document.querySelector(".fa-arrow-circle-right");
 left_click = document.querySelector(".fa-arrow-circle-left");
 all_icons = document.querySelectorAll(".timeout");
