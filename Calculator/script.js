@@ -7,39 +7,38 @@ addButon = document.querySelector(".first");
 subButon = document.querySelector(".second");
 multipyleButon = document.querySelector(".third");
 divisionButon = document.querySelector(".fourth");
-val = 0;
 
 class Calculate {
 
     static add() {
         val += Number(inputBox.value);
         result.innerText = val;
-        inputBox.value="";
+        inputBox.value = "";
 
     }
 
     static sub() {
         val -= Number(inputBox.value);
         result.innerText = val;
-        inputBox.value="";
+        inputBox.value = "";
 
     }
 
     static multiply() {
         val *= Number(inputBox.value);
         result.innerText = val;
-        inputBox.value="";
+        inputBox.value = "";
 
     }
 
     static division() {
         val /= Number(inputBox.value);
         result.innerText = val;
-        inputBox.value="";
+        inputBox.value = "";
 
     }
     static deleteButon() {
-        inputBox.value="";
+        inputBox.value = "";
         val = 0;
         result.innerText = "";
 
@@ -48,10 +47,21 @@ class Calculate {
 
 
 events = () => {
-    addButon.addEventListener("click", Calculate.add);
-    subButon.addEventListener("click", Calculate.sub);
-    multipyleButon.addEventListener("click", Calculate.multiply);
-    divisionButon.addEventListener("click", Calculate.division);
+    value = 0;
+    addButon.addEventListener("click", () => {
+        Calculate.add();
+    });
+    subButon.addEventListener("click", () => {
+        Calculate.sub();
+    });
+
+    val = 1;
+    multipyleButon.addEventListener("click", () => {
+        Calculate.multiply();
+    });
+    divisionButon.addEventListener("click", () => {
+        Calculate.division();
+    });
     deleteAll.addEventListener("click", Calculate.deleteButon);
 }
 
