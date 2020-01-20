@@ -1,13 +1,16 @@
 let month, day, button, burcBulma;
 
+// Html dökümanı üzerindeki gerekli yerler yakalandı
 month = document.querySelector("#month");
 day = document.querySelector("#day");
 button = document.querySelector("#button");
-
+//Fonksiyona iki parametre gönderildi 
 
 burcBulma = (m, d) => {
+    // fonksiyona gönderilen m parametresine göre switch case bloğu yazıldı
     switch (m) {
         case 1:
+            //if bloklarının hepsi d parametresine göre belirlendi
             if (d <= 21) return "oğlak";
             else return "kova";
             break;
@@ -55,15 +58,17 @@ burcBulma = (m, d) => {
             if (d <= 21) return "yay";
             else return "oğlak";
             break;
+        default: console.log("fault");
     }
-
 }
-
-
+// button değişkenine click event'i gerçekleştiğinde aşağıdaki fonksiyon çalışıyor
 button.addEventListener("click", () => {
     let mo, da, result;
+    // month ve day değişkenlerinin value'si mo ve da değşkenlerine number tipini dönüştürülerecek tanımlandı
     mo = Number(month.value);
     da = Number(day.value);
+    // result değişkenine fonksiyondan dönen değer tanımlandı
     result = burcBulma(mo, da);
+    // console'a result değişkeni gösterildi
     console.log(result);
 });
