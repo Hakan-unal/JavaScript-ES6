@@ -65,14 +65,14 @@ class Calculate {
 // fark olduğunu düşünmüyorum bu şekilde  daha düzenli  
 
 events = () => {
-    value = 0;
+    val = 0;
     addButon.addEventListener("click", () => {
         Calculate.add();
     });
     subButon.addEventListener("click", () => {
         Calculate.sub();
     });
-
+    
     value = 1;
     multipyleButon.addEventListener("click", () => {
         Calculate.multiply();
