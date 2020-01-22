@@ -1,7 +1,7 @@
 let button, input, output, fonksiyon;
 
 // html dökümanı üzeridneki gerekli yerler yakalandı
-button = document.querySelector("#button");
+button = document.querySelector("#binary");
 input = document.querySelector("#input");
 output = document.querySelector("#output");
 
