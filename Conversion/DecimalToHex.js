@@ -1,4 +1,5 @@
 let buton, fonk;
+// Html dökümanı üzerindeki gerekli yer yakalandı
 buton = document.querySelector("#hex");
 fonk = (number) => {
     // fonksiyona gönderilen number poarametresi üzerinden aşağıdaki işlemler yapıldı
