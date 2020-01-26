@@ -7,6 +7,7 @@ fonki = (event) => {
         // case koşullarında yer alan idlerle eşleşme varsa bloklara girer ve mevcut backround beyazsa
         // siyah yaapr siyahsa beyaz yapar ve breakle işlemi sonlandırır diğer bloklara girmez
         // koşul sağlandıysa
+
         case "b1":
             let b1 = document.getElementById("b1").style.background;
             if (b1 == "white") {
@@ -135,7 +136,13 @@ fonki = (event) => {
             else {
                 document.getElementById("b16").style.background = "white";
             } break;
-        default: console.log("invalid value");
+        default:
+            let h1;
+            h1 = document.querySelector("#h1");
+            h1.style.color = "blue";
+            setTimeout(() => {
+                h1.style.color = "black"
+            }, 3000);
     }
 }
 
