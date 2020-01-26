@@ -1,7 +1,12 @@
 let tablo, fonki;
 
 fonki = (event) => {
+    // fonksiyona gönderilen event parametresi üzerindeki target.id değişkenine göre switch bloğu
+    // oluşturduk yani mouse'un tıkladığı html elementinin herhangi bir id'si varsa switch bloğuna girer
     switch (event.target.id) {
+        // case koşullarında yer alan idlerle eşleşme varsa bloklara girer ve mevcut backround beyazsa
+        // siyah yaapr siyahsa beyaz yapar ve breakle işlemi sonlandırır diğer bloklara girmez
+        // koşul sağlandıysa
         case "b1":
             let b1 = document.getElementById("b1").style.background;
             if (b1 == "white") {
@@ -67,7 +72,7 @@ fonki = (event) => {
                 document.getElementById("b8").style.background = "white";
             } break;
         case "b9":
-            let b9= document.getElementById("b9").style.background;
+            let b9 = document.getElementById("b9").style.background;
             if (b9 == "white") {
                 document.getElementById("b9").style.background = "black";
             }
@@ -134,8 +139,11 @@ fonki = (event) => {
     }
 }
 
+// tablo değişkeni html üzerinden yaklandı
 tablo = document.querySelector("#contain");
+// tablo değişkenine click event'i gerçekleştiğinde aşağıdaki fonksiyon gerçekleşti
 tablo.addEventListener("click", (event) => {
+    //event değişkeni mouse'un tıkladığı yerin tüm bilgisini içeriyor bu parametreyi fonksiyona gönderiyoruz
     fonki(event);
 });
 
