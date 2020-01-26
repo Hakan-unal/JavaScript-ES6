@@ -1,6 +1,6 @@
-let buton, fonk;
+let decimaltohex, fonk;
 // Html dökümanı üzerindeki gerekli yer yakalandı
-buton = document.querySelector("#hex");
+decimaltohex = document.querySelector("#decimaltohex");
 fonk = (number) => {
     // fonksiyona gönderilen number poarametresi üzerinden aşağıdaki işlemler yapıldı
     // önce array class'ı içerisinden hex objesi yaratıldı çünkü reverse methodudunu 
@@ -18,7 +18,7 @@ fonk = (number) => {
     return hex.reverse();
 }
 // buton değişkenine click event'i gerçekleştiğinde aşağıdaki fonksiyon çalışıyor
-buton.addEventListener("click", () => {
+decimaltohex.addEventListener("click", () => {
     let val, sum;
     val = Number(input.value);
     // input değişkeninin value'si number tipine çevirilip fonksiyon fonksiyonuna gönderildi orada dönen sonuç sum

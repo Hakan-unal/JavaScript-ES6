@@ -1,7 +1,7 @@
-let button, input, output, fonksiyon;
+let decimaltobinary, input, output, fonksiyon;
 
 // html dökümanı üzeridneki gerekli yerler yakalandı
-button = document.querySelector("#binary");
+decimaltobinary = document.querySelector("#decimaltobinary");
 input = document.querySelector("#input");
 output = document.querySelector("#output");
 
@@ -22,7 +22,7 @@ fonksiyon = (number) => {
     return binary.reverse();
 }
 // button değişkenine click event'i gerçekleştiğinde aşağıdaki fonksiyon çalışıyor
-button.addEventListener("click", () => {
+decimaltobinary.addEventListener("click", () => {
     let val, sum;
     val = Number(input.value);
     // input değişkeninin value'si number tipine çevirilip fonksiyon fonksiyonuna gönderildi orada dönen sonuç sum
