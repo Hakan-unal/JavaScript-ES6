@@ -17,7 +17,7 @@ fonk = (number) => {
     // fonksiyonda tersten yazılıyor sayı bu yüzden reverse methodunu kullanrak fonksiyonun çağırıldığı yere sonucu return ettik
     return hex.reverse();
 }
-// buton değişkenine click event'i gerçekleştiğinde aşağıdaki fonksiyon çalışıyor
+// decimaltohex değişkenine click event'i gerçekleştiğinde aşağıdaki fonksiyon çalışıyor
 decimaltohex.addEventListener("click", () => {
     let val, sum;
     val = Number(input.value);

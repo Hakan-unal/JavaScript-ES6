@@ -3,7 +3,7 @@ let fonki, binarytodecimal;
 binarytodecimal = document.querySelector("#binarytodecimal");
 
 fonki = (number) => {
-    // fonkisyona gönderilen number parametresi üzerinden aşağıdaki işlemler yapıldı
+    // fonksiyona gönderilen number parametresi üzerinden aşağıdaki işlemler yapıldı
     let sum, len;
     sum = 0;
     len = number.length;
@@ -18,7 +18,7 @@ fonki = (number) => {
     // fonksiyonunun çağırıldğı yere sum değişkeni return edildi
     return sum;
 }
-// buttton değişkenine click event'i gerçekleştiğinde aşağıdaki fonksiyon çalışıyor
+// binarytodecimal değişkenine click event'i gerçekleştiğinde aşağıdaki fonksiyon çalışıyor
 binarytodecimal.addEventListener("click", () => {
     let sum;
     // fonksiyonan dönen değer sum değişkeni içeriisne tanımlandı

@@ -21,7 +21,7 @@ fonksiyon = (number) => {
     // fonksiyonda tersten yazılıyor sayı bu yüzden reverse methodunu kullanrak fonksiyonun çağırıldığı yere sonucu return ettik
     return binary.reverse();
 }
-// button değişkenine click event'i gerçekleştiğinde aşağıdaki fonksiyon çalışıyor
+// decimaltobinary değişkenine click event'i gerçekleştiğinde aşağıdaki fonksiyon çalışıyor
 decimaltobinary.addEventListener("click", () => {
     let val, sum;
     val = Number(input.value);
