@@ -32,13 +32,23 @@ const Combination = (n, r) => {
         total = val1 / (val2 * val3);
         return total;
     }
-    else{
-        alert("Invalid Value");I
+    else {
+        alert("Invalid Value");
     }
 };
 
-const Permutation = (val1, val2) => {
-    console.log("Permutation gelince tamamla");
+const Permutation = (n, r) => {
+    if (n >= r) {
+        let total;
+        total = 1;
+        for (let i = 0; i < r; i++) {
+            total = total * (n - i);
+        }
+        return total;
+    }
+    else {
+        alert("Invalid Value");
+    }
 };
 
 factorialButton.addEventListener("click", () => {
@@ -61,8 +71,15 @@ combinationButton.addEventListener("click", () => {
     val2 = Number(array[1]);
     sum = Combination(val1, val2);
     output.value = sum;
+    input.value = "";
 });
 
 permutationButton.addEventListener("click", () => {
-    Permutation();
+    let val1, val2, array, sum;
+    array = input.value.split(" ");
+    val1 = Number(array[0]);
+    val2 = Number(array[1]);
+    sum = Permutation(val1, val2);
+    output.value = sum;
+    input.value = "";
 });
