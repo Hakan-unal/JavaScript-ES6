@@ -8,19 +8,24 @@
 
     <title>Matris</title>
     <style>
-        input {
-            width: 255px;
+        .input {
+            width: 50px;
+        }
+
+        #input {
+            width: 260px;
         }
     </style>
 </head>
 
 
 <body>
-
-    <input id="input" type="number" placeholder="(n*n matris) Please Enter n Value"> <button id="button"
-        class="btn btn-primary">Send</button>
-
-    <div id="container" class="container">
+    <div class="container my-3">
+        <label for="input">MAXIMUM 14:</label>
+        <input id="input" type="number" placeholder="(n*n matris) Please Enter n Value">
+        <button id="createMatrisButton" class="btn btn-primary mx-5">Create Matris Table</button>
+    </div>
+    <div id="container" class="container my-5">
 
     </div>
 
