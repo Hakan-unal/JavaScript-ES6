@@ -54,5 +54,3 @@ const findMonth = () => {
 findMonth();
 
 findDay(obj);
-
-
